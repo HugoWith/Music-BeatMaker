@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'raleway';
+}
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 28vh;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  position: relative;
+}
+
+.header h1 {
+  margin: 50px 0px 10px 0px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+
+.header p {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  padding-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.pads {
+  background: lightblue;
+  width: 100%;
+  display: flex;
+}
+
+.pads > div {
+  width: 100px;
+  height: 100px;
+  flex: 1;
+}
+
+.pad1 {
+  background: #36b5b0;
+}
+.pad2 {
+  background: #9dd8c8;
+}
+.pad3 {
+  background: #f09595;
+}
+.pad4 {
+  background: #fcf5b0;
+}
+.pad5 {
+  background: #f0cf85;
+}
+.pad6 {
+  background: #ff896b;
+}
+
+@keyframes jump{
+  0% {
+    bottom: 0%;
+    left: 20%;
+  }
+
+  50% {
+     bottom: 50%;
+     left: 50%;
+  }
+
+  100% {
+    bottom: 0%;
+    left: 80%;
+  }
+}
+
+.visual > div {
+  position: absolute;
+  bottom: 0%;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transform: scale(1);
+  z-index: -1;
+}
+
+
+
+
+
+
+
+
+
